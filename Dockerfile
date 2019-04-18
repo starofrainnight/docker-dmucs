@@ -27,4 +27,4 @@ EXPOSE 9714
 VOLUME [ "/etc/dmucs" ]
 
 ENTRYPOINT [ "python3", "entrypoint.py" ]
-CMD ["dmucs", "-H", "/etc/dmucs/hosts-info"]
+CMD ["dmucs-dispatcher"]
