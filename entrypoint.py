@@ -10,9 +10,7 @@ import subprocess
 
 
 def main():
-    # Command name `dmucs-dispatcher` for avoid overrided the real dmucs
-    # program
-    if sys.argv[1] == "dmucs-dispatcher":
+    if sys.argv[1] == "dmucs":
         cfg_dir = "/etc/dmucs"
         # We generate on if there don't have `hosts-info` file inside /etc/dmucs
         os.makedirs(cfg_dir, exist_ok=True)
